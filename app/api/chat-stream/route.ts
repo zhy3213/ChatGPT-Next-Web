@@ -59,4 +59,7 @@ export async function POST(req: NextRequest) {
   }
 }
 
-export const runtime = "experimental-edge";
+export const config = {
+  runtime: 'experimental-edge',
+  regions: ['sfo1'],
+}
