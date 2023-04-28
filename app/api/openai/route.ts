@@ -30,4 +30,7 @@ export async function GET(req: NextRequest) {
   return makeRequest(req);
 }
 
-export const runtime = "edge";
+export const config = {
+  runtime: 'edge',
+  regions: ['sfo1'],
+}
