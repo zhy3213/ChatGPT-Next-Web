@@ -19,4 +19,7 @@ export async function POST() {
   return NextResponse.json(DANGER_CONFIG);
 }
 
-export const runtime = "edge";
+export const config = {
+  runtime: 'edge',
+  regions: ['sfo1'],
+}
